@@ -5,6 +5,7 @@ const express       = require('express');
 const mongoose      = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport      = require('passport');
+const path          = require('path');
 
 //  local modules
 require('./models/User');
@@ -24,6 +25,7 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(express.static(path.join(__dirname, 'public')));
 
 require('./routes/authRoutes')(app);
 
