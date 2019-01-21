@@ -5,6 +5,6 @@ body {
     background-size: cover;
     color: #042356
 }
-.email {
-    padding-left: 5px;
+nav .nav-wrapper .brand-logo img {
+    margin-top: 10px;
 }
