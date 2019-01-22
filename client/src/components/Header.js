@@ -25,6 +25,9 @@ class Header extends Component {
                 return (
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><Payments /></li>
+                        <li className="amber-text" style={{ margin: '0px 10px' }}>
+                            Credits: {this.props.auth.credits}
+                        </li>
                         <li><a className="amber-text" href="/api/logout">Logout</a></li>
                     </ul>
                 );
